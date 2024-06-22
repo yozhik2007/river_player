@@ -1044,6 +1044,7 @@ class BetterPlayerController {
   ///Setup overridden fit.
   void setOverriddenFit(BoxFit fit) {
     _overriddenFit = fit;
+    _postControllerEvent(BetterPlayerControllerEvent.changeFit);
   }
 
   ///Get fit used in current video. If fit is null, then fit from
